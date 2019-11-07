@@ -1,7 +1,7 @@
 # 概要
 
-[fastText](https://github.com/facebookresearch/fastText) を利用した、書誌データからの [NDC(9 版)](https://www.jla.or.jp/committees/bunrui/tabid/789/Default.aspx) 推定学習モデルです。
-精度は以下の通りです。
+ndc_predictorは、[fastText](https://github.com/facebookresearch/fastText) を利用した、書誌データからの [NDC(9 版)](https://www.jla.or.jp/committees/bunrui/tabid/789/Default.aspx) 推定学習モデルである。
+精度は以下の通りである。
 
 | モデル  | クラス | 精度（R@1） |
 | ------- | ------ | ----------- |
@@ -11,8 +11,8 @@
 
 # 学習
 
-学習データとしては、国立国会図書館の書誌データ（2017 年 7 月断面）のうち、NDC のある資料（4,256,238 件）のタイトル、出版者、責任表示のテキストを結合して利用しています。
-形態素解析には、 mecab-ipadic-neologd の辞書と kuromoji を利用しています。kuromoji のモードは SEARCH です。
+学習データとしては、国立国会図書館の書誌データ（2017 年 7 月断面）のうち、NDC のある資料（4,256,238 件）のタイトル、出版者、責任表示のテキストを結合して利用している。
+形態素解析には、 mecab-ipadic-neologd の辞書と kuromoji を利用している。kuromoji のモードは SEARCH である。
 
 ```java
 String ndc = "000"
@@ -31,7 +31,7 @@ out.println("__label__"+ndc+" "+String.join(" ", tokens));
 
 # 学習済みモデル
 
-gzip で圧縮しています。各 272MB です。
+gzip で圧縮してあり、各 272MB である。
 
 - [NDC 1 桁](https://lab.ndl.go.jp/ndc/model/model_ndc1.bin.gz)
 - [NDC 2 桁](https://lab.ndl.go.jp/ndc/model/model_ndc2.bin.gz)
@@ -39,7 +39,7 @@ gzip で圧縮しています。各 272MB です。
 
 # テストデータ
 
-test 以下に、NDC3 桁モデル用の評価データを置いています。
+test 以下に、NDC3 桁モデル用の評価データを置いている。
 
 ```bash
 ./fasttext test model_ndc3.bin test_ndc3.txt
