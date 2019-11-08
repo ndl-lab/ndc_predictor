@@ -29,7 +29,7 @@ try (JapaneseTokenizer tokenizer_a = new JapaneseTokenizer(null, false, Japanese
 out.println("__label__"+ndc+" "+String.join(" ", tokens));
 ```
 
-# 学習済みモデル
+# 学習済みfastTextモデル
 
 gzip で圧縮してあり、各 272MB である。
 
