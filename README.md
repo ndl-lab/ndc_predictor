@@ -33,9 +33,9 @@ out.println("__label__"+ndc+" "+String.join(" ", tokens));
 
 gzip で圧縮してあり、各 272MB である。
 
-- [NDC 1 桁](https://lab.ndl.go.jp/ndc/model/model_ndc1.bin.gz)
-- [NDC 2 桁](https://lab.ndl.go.jp/ndc/model/model_ndc2.bin.gz)
-- [NDC 3 桁](https://lab.ndl.go.jp/ndc/model/model_ndc3.bin.gz)
+- [NDC 1 桁](https://lab.ndl.go.jp/dataset/ndc/model/model_ndc1.bin.gz)
+- [NDC 2 桁](https://lab.ndl.go.jp/dataset/ndc/model/model_ndc2.bin.gz)
+- [NDC 3 桁](https://lab.ndl.go.jp/dataset/ndc/model/model_ndc3.bin.gz)
 
 # テストデータ
 
